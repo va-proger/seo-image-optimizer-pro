@@ -15,5 +15,6 @@ export default defineConfig({
     },
     minify: 'esbuild'  // Fast minify
   },
-  base: './'  // Relative для Pages (custom domain ok)
+  base: './',
+  publicDir: 'public'  // Relative для Pages (custom domain ok)
 })
