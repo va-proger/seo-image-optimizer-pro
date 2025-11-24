@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: light dark;
+}
+
+/* Native Tailwind base (встроено) — не трогай */
+
+/* Твой custom variant: Fallback для deep nesting или globals */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Body explicit (light/dark) — Tailwind inherit'ит */
+body {
+  background-color: #ffffff;
+  color: #111827;
+  font-family: ui-sans-serif, system-ui, sans-serif;
+  line-height: 1.5;
+}
+
+.dark body {
+  background-color: #0f172a;
+  color: #f9fafb;
+}
+
+/* Пример usage: Если нужно override (e.g., для hero gradient) */
+@layer utilities {
+  .gradient-hero {
+    @apply bg-gradient-to-br;
+    background: linear-gradient(135deg, oklch(var(--p) / 0.1) 0%, oklch(var(--s) / 0.1) 100%);  /* Modern: OKLCH для perceptual uniformity */
+  }
+  
+  .dark .gradient-hero {
+    --p: 200 0.2 0.1;  /* Slate-ish в OKLCH */
+    --s: 240 0.15 0.15;  /* Sky/emerald tint */
+  }
+}

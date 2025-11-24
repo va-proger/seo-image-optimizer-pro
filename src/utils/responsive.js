@@ -1,0 +1,1 @@
+export const RESPONSIVE_SIZES = [320, 640, 1024, 1536];

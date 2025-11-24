@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#0f172a">
+
+  <title>SEO Image Optimizer Pro — WebP / AVIF / ALT / Responsive Generator</title>
+
+  <meta name="description"
+    content="Онлайн-инструмент для полной SEO-оптимизации изображений: WebP, AVIF, JPEG, Responsive, ALT, метаданные, ZIP. Быстрее, лучше и полностью локально — данные не отправляются на сервер.">
+
+  <link rel="canonical" href="https://image-optimize.vproger.ru/" />
+
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="VProger">
+  <meta name="keywords"
+    content="image optimizer, webp, avif, responsive, alt generator, image seo, image compression, vproger">
+
+  <!-- FAVICONS -->
+  <link rel="icon" href="/icons/icon-192.png">
+  <link rel="apple-touch-icon" href="/icons/icon-512.png">
+
+  <!-- PWA -->
+  <link rel="manifest" href="/manifest.json">
+
+  <!-- OG -->
+  <meta property="og:title" content="SEO Image Optimizer Pro — оптимизация изображений онлайн" />
+  <meta property="og:description"
+    content="WebP, AVIF, responsive размеры, ALT, ZIP. Локальная обработка изображений — приватно и быстро." />
+  <meta property="og:image" content="https://image-optimize.vproger.ru/og-image.png" />
+  <meta property="og:url" content="https://image-optimize.vproger.ru/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="ru_RU" />
+
+  <!-- TWITTER -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="SEO Image Optimizer Pro">
+  <meta name="twitter:description" content="Оптимизация изображений с WebP, AVIF, responsive и ALT.">
+  <meta name="twitter:image" content="https://image-optimize.vproger.ru/og-image.png">
+  <script>
+    (function () {
+      let theme = localStorage.getItem("theme");
+
+      // Если темы нет — берём системную
+      if (!theme) {
+        theme = window.matchMedia("(prefers-color-scheme: dark)").matches
+          ? "dark"
+          : "light";
+        localStorage.setItem("theme", theme);
+      }
+
+      // Применяем тему моментально, без мигания
+      if (theme === "dark") {
+        document.documentElement.classList.add("dark");
+      } else {
+        document.documentElement.classList.remove("dark");
+      }
+    })();
+  </script>
+  <!-- PRECONNECT -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- ======== SCHEMA.ORG ======== -->
+
+  <!-- SoftwareApplication -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "SEO Image Optimizer Pro",
+      "operatingSystem": "Any",
+      "applicationCategory": "Utility",
+      "description": "Оптимизация изображений: WebP, AVIF, responsive размеры, ALT, ZIP. Полностью локально.",
+      "image": "https://image-optimize.vproger.ru/og-image.png",
+      "url": "https://image-optimize.vproger.ru/",
+      "author": {
+        "@type": "Person",
+        "name": "VProger"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "RUB"
+      }
+    }
+    </script>
+
+  <!-- WebSite -->
+  <script type="application/ld+json">
+    {
+     "@context": "https://schema.org",
+     "@type": "WebSite",
+     "url": "https://image-optimize.vproger.ru/",
+     "name": "SEO Image Optimizer Pro",
+     "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://www.google.com/search?q={search_term}",
+        "query-input": "required name=search_term"
+     }
+    }
+    </script>
+
+  <!-- Organization -->
+  <script type="application/ld+json">
+    {
+     "@context": "https://schema.org",
+     "@type": "Organization",
+     "name": "VProger Projects",
+     "url": "https://image-optimize.vproger.ru/",
+     "logo": "https://image-optimize.vproger.ru/icons/icon-512.png"
+    }
+    </script>
+
+  <!-- Person -->
+  <script type="application/ld+json">
+    {
+     "@context": "https://schema.org",
+     "@type": "Person",
+     "name": "VProger",
+     "url": "https://vproger.ru/",
+     "sameAs": [
+       "https://github.com/va-proger",
+       "https://career.habr.com/va_proger",
+       "https://vk.com/vproger"
+     ]
+    }
+    </script>
+
+  <!-- FAQ -->
+  <script type="application/ld+json">
+    {
+     "@context": "https://schema.org",
+     "@type": "FAQPage",
+     "mainEntity": [
+       {
+         "@type": "Question",
+         "name": "Отправляются ли изображения на сервер?",
+         "acceptedAnswer": {
+           "@type": "Answer",
+           "text": "Нет. Вся обработка выполняется локально в браузере и никуда не передаётся."
+         }
+       },
+       {
+         "@type": "Question",
+         "name": "Какие форматы поддерживаются?",
+         "acceptedAnswer": {
+           "@type": "Answer",
+           "text": "WebP, AVIF, JPEG, PNG. Экспорт в ZIP."
+         }
+       }
+     ]
+    }
+    </script>
+
+  <!-- HowTo -->
+  <script type="application/ld+json">
+    {
+     "@context": "https://schema.org",
+     "@type": "HowTo",
+     "name": "Как оптимизировать изображение онлайн",
+     "step": [
+       { "@type": "HowToStep", "text": "Загрузите изображение." },
+       { "@type": "HowToStep", "text": "Выберите формат и качество." },
+       { "@type": "HowToStep", "text": "Нажмите «Оптимизировать»." },
+       { "@type": "HowToStep", "text": "Скачайте ZIP." }
+     ]
+    }
+    </script>
+
+  <!-- BreadcrumbList -->
+  <script type="application/ld+json">
+    {
+     "@context": "https://schema.org",
+     "@type": "BreadcrumbList",
+     "itemListElement": [
+       {
+         "@type": "ListItem",
+         "position": 1,
+         "name": "Главная",
+         "item": "https://image-optimize.vproger.ru/"
+       }
+     ]
+    }
+    </script>
+
+  <!-- WebPage -->
+  <script type="application/ld+json">
+    {
+     "@context": "https://schema.org",
+     "@type": "WebPage",
+     "name": "SEO Image Optimizer Pro",
+     "url": "https://image-optimize.vproger.ru/",
+     "description": "Оптимизация изображений: WebP, AVIF, responsive размеры, ALT."
+    }
+    </script>
+
+</head>
+
+<body>
+  <div id="root"></div>
+</body>
+<script type="module" src="/src/main.jsx"></script>
+
+</html>

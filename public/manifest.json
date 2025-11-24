@@ -1,0 +1,23 @@
+{
+  "name": "SEO Image Optimizer Pro",
+  "short_name": "ImageOptimizer",
+  "description": "Мощный офлайн-инструмент для оптимизации изображений с SEO-тегами, ALT, srcset и ZIP-экспортом.",
+  "start_url": ".",
+  "scope": ".",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0f172a",
+  "theme_color": "#0ea5e9",
+  "icons": [
+    {
+      "src": "/icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
