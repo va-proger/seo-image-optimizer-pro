@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://va-proger.github.io/seo-image-optimizer-pro",
+  "homepage": "https://image-optimize.vproger.ru",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
